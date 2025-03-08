@@ -22,7 +22,7 @@
 		<header class="header">
 			<div class="header-box container">
 				<nav class="nav">
-					<a href="./index.html" class="nav-logo">Web<span class="accent">Studio</span></a>
+					<a href="./index.html" class="nav-logo header-logo">Web<span class="accent">Studio</span></a>
 					<ul class="nav-list">
 						<li><a href="./index.html" class="link page">Studio</a></li>
 						<li><a href="" class="link">Portfolio</a></li>
@@ -35,7 +35,69 @@
 						<li><a href="+110001111111" class="link address-item">+11 (000) 111-11-11</a></li>
 					</ul>
 				</address>
+				<button class="burger-btn" type="button" data-menu-open>
+					<svg class="burger-icon" width="24" height="24">
+					<use href="./images/icons.svg#icon-btn_burger_menu"></use>
+					</svg>
+				</button>
 			</div>
+
+
+			<!-- #region mobile-menu -->
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu-box">
+					<button class="mobile-menu-close" data-menu-close>
+						<svg class="close-button-icon" width="8" height="8">
+						<use href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<nav class="mobile-nav">
+						<ul class="mob-nav-menu">
+							<li><a href="./index.html" class="link page">Studio</a></li>
+							<li><a href="" class="link">Portfolio</a></li>
+							<li><a href="" class="link">Contacts</a></li>
+						</ul>
+					</nav>
+					<address class="mob-menu-address">
+						<ul class="mob-address-list">
+							<li><a href="+110001111111" class="link tel-item">+11 (000) 111-11-11</a></li>
+							<li><a href="mailto:info@devstudio.com" class="link address-item">info@devstudio.com</a></li>
+						</ul>
+					</address>
+					<ul class="mob-soc-networks">
+						<li class="social-link">
+							<a href="" class="social-networks-link">
+								<svg class="networks-link" width="24" height="24">
+									<use href="./images/icons.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="" class="social-networks-link">
+								<svg class="networks-link" width="24" height="24">
+									<use href="./images/icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="" class="social-networks-link">
+								<svg class="networks-link" width="24" height="24">
+									<use href="./images/icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="" class="social-networks-link">
+								<svg class="networks-link" width="24" height="24">
+									<use href="./images/icons.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- #endregion mobile-menu -->
+
 		</header>
 	<!-- #endregion header -->
 	
@@ -98,7 +160,7 @@
 	<!-- #endregion features -->
 	
 	<!-- #region team -->
-			<section class="team">
+			<section hidden class="team">
 				<div class="container">
 					<h2 class="section-title title-team">Our Team</h2>
 					<ul class="team-list">
@@ -256,7 +318,7 @@
 	<!-- #endregion team -->
 	
 	<!-- #region portfolio -->
-			<section class="portfolio">
+			<section hidden class="portfolio">
 				<div class="container">
 					<h2 class="section-title title-portfolio" id="portfolio">Our Portfolio</h2>
 					<ul class="portfolio-list">
@@ -324,11 +386,12 @@
 				</div>
 			</section>
 	<!-- #endregion portfolio -->
+
 		</main>
 	
 	
 	<!-- #region footer -->
-		<footer class="footer">
+		<footer hidden class="footer">
 			<div class="container footer-box">
 				<div class="footer-logo-box">
 					<a href="./index.html" class="footer-logo">Web<span class="accent">Studio</span></a>
@@ -380,7 +443,7 @@
 	<!-- #endregion footer -->
 
 	<!-- #region modal -->
-	 <div class="backdrop in-open">
+	 <div hidden class="backdrop">
 		<div class="modal">
 			<button class="close-button" type="button">
 				<svg class="close-button-icon" width="8" height="8">
@@ -438,9 +501,10 @@
 	 </div>
 
 
-
-
 	<!-- #endregion modal -->
+
+		<script src="./js/menu.js"></script>
+		<script src="./js/modal.js"></script>
 
 
 </body>
