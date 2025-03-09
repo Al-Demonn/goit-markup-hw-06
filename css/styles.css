@@ -348,11 +348,7 @@ button {
 	color: #4d5ae5;
 }
 
-.footer-soc-box {
-	width: 280px;
-	height: 40px;
 
-}
 
 .mob-soc-networks {
 	display: flex;
@@ -473,13 +469,13 @@ button {
 	height: 600px;
 	padding-top: 188px;
 	padding-bottom: 188px;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/pc-bg.jpg);
 	max-width: 1440px;
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 2x) {
 .hero-image {
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office@2x.jpg);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/pc-bg@2x.jpg);
 	}
 }
 
@@ -691,7 +687,6 @@ button {
 	width: 264px;
 }
 
-
 }
 
 
@@ -715,11 +710,299 @@ button {
 	border-radius: 50%;
 }
 
-
 }
 
 /* #endregion team */
 
+
+/* #region portfolio */
+
+.portfolio {
+	padding: 96px 0;
+}
+
+.title-portfolio {
+	margin-bottom: 72px;
+}
+
+.portfolio-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+	margin-bottom: 8px;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px;
+}
+
+.title-item {
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	border-bottom: 1px solid #e7e9fc;
+	border-left: 1px solid #e7e9fc;
+	border-right: 1px solid #e7e9fc;
+	padding: 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+.portfolio-list {
+	row-gap: 72px;
+	column-gap: 24px;
+}
+
+.portfolio-item {
+	width: calc((100% - 24px) / 2);
+	position: relative;
+}
+
+.portfolio-card {
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+@media screen and (max-width: 1157px) {
+
+.card-text {
+	display: none;
+}
+.portfolio-card {
+	/* margin-bottom: 32px; */
+}
+}
+
+@media screen and (min-width: 1158px) {
+
+.portfolio {
+	padding: 120px 0;
+	}
+
+.portfolio-item {
+	width: calc((100% - 48px) / 3);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-card {
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+	transform: translateY(0%);
+	cursor: pointer;
+}
+
+.card-text {
+	background-color: #4d5ae5;
+	color: #f4f4fd;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 40px 32px;
+}
+
+.portfolio-item:hover .card-text {
+	transform: translateY(0);
+}
+
+.title-item {
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	border-bottom: 1px solid #e7e9fc;
+	border-left: 1px solid #e7e9fc;
+	border-right: 1px solid #e7e9fc;
+	padding: 32px 16px;
+}
+
+
+}
+
+/* #endregion portfolio */
+
+
+/* #region footer */
+
+
+.footer {
+	background: #2e2f42;
+	padding: 100px 0;
+}
+
+.footer-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo-box {
+	width: 288px;
+	height: 112px;
+margin-bottom: 72px;
+}
+
+.footer-logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #4d5ae5;
+	display: flex;
+	margin-bottom: 16px;
+justify-content: center;
+}
+
+.footer-logo .accent {
+	color: #f4f4fd;
+}
+
+.footer-text {
+	letter-spacing: 0.02em;
+	color: #f4f4fd;
+	max-width: 264px;
+
+}
+
+.footer-soc-box {
+	width: 208px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto 72px;
+
+}
+
+.soc-text {
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.social-networks {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-email-input {
+	width: 288px;
+	height: 136px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.email {
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 288px;
+	height: 40px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	padding-left: 16px;
+	outline: transparent;
+	background-color: transparent;
+}
+
+.email::placeholder {
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+}
+
+.subscriber {
+	display: flex;
+	flex-direction: column;
+	background: #2e2f42;
+	gap: 16px;
+}
+
+.subscribe-icon {
+	fill: #fff;
+	margin-left: 16px;
+}
+
+.footer-submit {
+	padding: 8px 24px;
+	min-width: 165px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+.footer-box {
+	display: flex;
+
+	}
+
+.footer-logo-box {
+	width: 264px;
+	height: 112px;
+	margin: 0 24px 0 0;
+}
+
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.footer-soc-box {
+
+	display: flex;
+	
+
+}
+
+.soc-text {
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 16px;
+	text-align:left;
+
+}
+
+.social-networks {
+	display: flex;
+	gap: 16px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* #endregion footer */
 
 
 
@@ -782,17 +1065,6 @@ button {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.close-button:hover,
-.close-button:focus {
-	background-color: #404bbf;
-	border: none;
-}
-
-.close-button:hover,
-.close-button:focus .close-button-icon {
-	fill: #fff;
-}
-
 .modal-text {
 	font-weight: 500;
 	text-align: center;
@@ -816,7 +1088,6 @@ button {
 .form-input-box {
 	position: relative;
 }
-
 
 .form-input {
 	border: 1px solid rgba(46, 47, 66, 0.4);
@@ -884,6 +1155,7 @@ button {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	flex-shrink: 0;
 	background-color: transparent;
 	margin-right: 16px;
 	background: #fcfcfc;
@@ -899,6 +1171,8 @@ button {
 }
 
 .label-checkbox {
+	display: flex;
+	align-items: center;
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
@@ -946,4 +1220,18 @@ button {
 	margin-right: 8px;
 }
 }
+
+@media screen and (min-width: 1158px) {
+.close-button:hover,
+.close-button:focus {
+	background-color: #404bbf;
+	border: none;
+}
+
+.close-button:hover,
+.close-button:focus .close-button-icon {
+	fill: #fff;
+	}
+}
+
 /* #endregion modal */
