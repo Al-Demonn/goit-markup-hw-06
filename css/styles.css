@@ -774,9 +774,7 @@ button {
 .card-text {
 	display: none;
 }
-.portfolio-card {
-	/* margin-bottom: 32px; */
-}
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -878,17 +876,14 @@ justify-content: center;
 	letter-spacing: 0.02em;
 	color: #f4f4fd;
 	max-width: 264px;
-
 }
 
 .footer-soc-box {
 	width: 208px;
 	height: 80px;
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	margin: 0 auto 72px;
-
 }
 
 .soc-text {
@@ -900,6 +895,7 @@ justify-content: center;
 
 .social-networks {
 	display: flex;
+	
 	gap: 16px;
 }
 
@@ -936,7 +932,7 @@ justify-content: center;
 	display: flex;
 	flex-direction: column;
 	background: #2e2f42;
-	gap: 16px;
+	gap: 24px;
 }
 
 .subscribe-icon {
@@ -956,14 +952,14 @@ justify-content: center;
 @media screen and (min-width: 768px) {
 
 .footer-box {
-	display: flex;
-
+	flex-direction: row;
+	flex-wrap: wrap;
 	}
 
 .footer-logo-box {
 	width: 264px;
 	height: 112px;
-	margin: 0 24px 0 0;
+	margin-right: 24px;
 }
 
 .footer-logo {
@@ -972,18 +968,12 @@ justify-content: center;
 }
 
 .footer-soc-box {
-
-	display: flex;
-	
-
+	margin-left: 0;
+	margin-bottom: 72px;
 }
 
 .soc-text {
-	color: #fff;
-	font-weight: 500;
-	margin-bottom: 16px;
 	text-align:left;
-
 }
 
 .social-networks {
@@ -991,7 +981,29 @@ justify-content: center;
 	gap: 16px;
 }
 
+.footer-email-input {
+	width: 264px;
+	align-items: start;
+	
 }
+.subscriber {
+	flex-direction: row;
+}
+
+.email {
+	width: 264px;
+}
+
+}
+
+@media screen and (min-width: 1158px) {
+
+
+
+
+
+}
+
 
 
 
